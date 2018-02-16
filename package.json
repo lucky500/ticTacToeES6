@@ -1,0 +1,21 @@
+{
+  "name": "tic-tac-toe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prebundle": "cp src/index.html dist/index.html", 
+    "bundle": "browserify src/game-start.js -t babelify --outfile dist/bundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babelify": "^8.0.0",
+    "browserify": "^16.1.0"
+  }
+  { 
+    "browserify": { 
+      "transform": [ "babelify" ] 
+    } 
+  }
+}
